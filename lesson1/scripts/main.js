@@ -61,10 +61,11 @@ console.log(name);
 let middle_name = prompt('Enter Your middle name');
 console.log(middle_name);
 
-let birth_date = prompt('Enter Your birth date');
-console.log(birth_date);
+let age = prompt('Enter Your age');
+age = age + '';
+console.log(age);
 
-visitor = `${name} ${middle_name} - ${birth_date}`;
+visitor = `${name} ${middle_name} - ${age}`;
 console.log(visitor);
 
 // alert(visitor);
