@@ -61,8 +61,7 @@ console.log(name);
 let middle_name = prompt('Enter Your middle name');
 console.log(middle_name);
 
-let age = prompt('Enter Your age');
-age = age + '';
+let age = prompt('Enter Your age') + '';
 console.log(age);
 
 visitor = `${name} ${middle_name} - ${age}`;
