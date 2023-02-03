@@ -103,11 +103,23 @@ console.log(users[9].password);
 // Перевірте  скрипт при a, що дорівнює 1, 0, -3
 
 let x = 1;
-console.log(x !== 0);
+if (x !== 0) {
+    console.log('Вірно')
+} else {
+    console.log('Невірно')
+}
 x = 0;
-console.log(x !== 0);
+if (x !== 0) {
+    console.log('Вірно')
+} else {
+    console.log('Невірно')
+}
 x = -3;
-console.log(x !==0);
+if (x !==0) {
+    console.log('Вірно')
+} else {
+    console.log('Невірно')
+}
 
 
 // Дано змінну time яка рівна числу від 0 до 59.
