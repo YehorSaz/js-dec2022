@@ -85,13 +85,14 @@ let products = [
         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
     },
 ];
-
+document.write(`<div class="products">`)
 for (const product of products) {
     document.write(`<div class="product-card">`);
-    document.write(`<h3 class="product-title">${product.title}. Price - ${product.price}</h3>`);
+    document.write(`<h3 class="product-title"><p>${product.title}</p> Price - ${product.price}</h3>`);
     document.write(`<img src = ${product.image} alt="img" class="product-image">`);
     document.write(`</div>`);
 }
+document.write(`</div>`)
 
 //
 // за допомоги циклу вивести:
