@@ -78,12 +78,12 @@ createUl('Text');
 
 function ul_liCreator(numOfLi, textLi) {
     document.write(`<ul>`);
-    for (let i = 0; i < numOfLi; i++) {
+    for (let i = 0; i < parseInt(numOfLi); i++) {
         document.write(`<li>${textLi}</li>`);
     }
     document.write(`</ul>`);
 }
-ul_liCreator(2, 'hello');
+ul_liCreator(3, 'hello');
 
 
 
