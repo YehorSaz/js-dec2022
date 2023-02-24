@@ -12,7 +12,8 @@ let user1 = new User('Vasya', 'Batarejkin', 'vasya@gmail.com', 223322, 1);
 
 
 // створити пустий масив, наповнити його 10 об'єктами new User(....)
-let usersArr = [
+let users = [];
+users.push(
     new User('Vasya', 'Batarejkin', 'vasya@gmail.com', 223322, 1),
     new User('Petya', 'Batarejkin', 'Petya@gmail.com', 223322, 2),
     new User('Kolya', 'Batarejkin', 'Kolya@gmail.com', 223322, 3),
@@ -23,16 +24,16 @@ let usersArr = [
     new User('Marina', 'Batarejkin', 'Marina@gmail.com', 223322, 8),
     new User('Bill', 'Batarejkin', 'Bill@gmail.com', 223322, 9),
     new User('Nick', 'Batarejkin', 'Nick@gmail.com', 223322, 10)
-];
-// console.log(usersArr);
+);
+console.log(users);
 
 
 // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
-let filterUsers = usersArr.filter(item => item.id % 2 === 0);
+let filterUsers = users.filter(item => item.id % 2 === 0);
 // console.log(filterUsers);
 //
 // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
-let sortUsers = usersArr.sort((a, b) => a.id - b.id);
+let sortUsers = users.sort((a, b) => a.id - b.id);
 // console.log(sortUsers);
 //
 
