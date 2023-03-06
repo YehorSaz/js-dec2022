@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson10</title>
+
+    <style>
+        .userBlock {
+            width: 150px;
+            height: 85px;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .userForm {
+            display: flex;
+        }
+
+        .form {
+            margin-right: 20px;
+        }
+
+        input {
+            margin-bottom: 5px;
+        }
+
+        .numBlock {
+            background: #bad593;
+            margin-top: 50px;
+            height: 50px;
+            width: 200px;
+            font-size: 30px;
+        }
+
+        .objList {
+            width: 400px;
+            height: 400px;
+            background: #d3d0d0;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 15px;
+        }
+
+        .objects {
+            padding: 10px 0 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 90%;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px 0 30px;
+        }
+
+        .btn {
+            width: 100px;
+            font-size: 20px;
+        }
+
+        .out {
+            font-size: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<div class="userForm">
+    <form name="f1" class="form">
+        <input type="text" name="name" placeholder="enter your name">
+        <br>
+        <input type="text" name="surname" placeholder="enter your surname">
+        <br>
+        <input type="text" name="age" placeholder="enter your age">
+        <br>
+
+        <button>send</button>
+    </form>
+</div>
+
+<hr>
+
+<div class="numBlock"> 1</div>
+
+<br>
+<hr>
+
+<div class="objList">
+    <div class="objects"></div>
+    <div class="buttons">
+        <button class="btn" id="prev">Previous</button>
+        <button class="btn" id="next">Next</button>
+    </div>
+</div>
+
+<hr>
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
